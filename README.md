@@ -1,5 +1,5 @@
 # Ex. No:1b 			Study of Client Server Chat Applications
-## NAME:M.suren
+## NAME:M.SUREN
 ## REG NO:212223230222
 
 ## Aim: 
