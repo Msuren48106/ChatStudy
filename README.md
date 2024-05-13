@@ -1,4 +1,6 @@
 # Ex. No:1b 			Study of Client Server Chat Applications
+## NAME:M.suren
+## REG NO:212223230222
 
 ## Aim: 
 To perform a study on Client Server Chat Applications
@@ -73,8 +75,8 @@ Client-server chat applications are versatile tools that facilitate real-time co
 
 Client-server chat applications are foundational to real-time communication over networks. They incorporate principles of socket programming, communication protocols, and security mechanisms to provide a seamless user experience. Understanding the basics of client-server chat applications is essential for developers involved in networked application development, as they form the backbone of various collaborative communication systems. As technology evolves, chat applications continue to adapt, incorporating new features and technologies to enhance user interaction and connectivity.
 
-## program:
-## client:
+## Program:
+## Client:
 ```
 import socket
 s=socket.socket()
@@ -89,29 +91,30 @@ i=0
 while True:
     while(i<len(l)):
         st+=s
-        c.send(str(l[i:st]).encode())                      
+        c.send(str(l[i:st]).encode())
         ack=c.recv(1024).decode()
         if ack:
             print(ack)
             i+=s
-
 ```
-## server:
+
+## Server:
 ```
 import socket
 s=socket.socket()
 s.connect(('localhost',8000))
 while True: 
-    print(s.recv(1024).decode())  
+    print(s.recv(1024).decode())
     s.send("acknowledgement recived from the server".encode())
 ```
-## Output
-![Screenshot 2024-04-22 132355](https://github.com/Msuren48106/ChatStudy/assets/150503875/8ad5ad09-8074-4e13-b290-4e412f9903c8)
+## Output:
+## Client:
+![image](https://github.com/kannan-nagaraju/ChatStudy/assets/145742755/a9d35002-365d-4fc1-b94f-acb91f47a737)
 
-![Screenshot 2024-04-22 132418](https://github.com/Msuren48106/ChatStudy/assets/150503875/4ae31da9-1825-49e6-a9fa-603a71e76645)
+## Server:
+![image](https://github.com/kannan-nagaraju/ChatStudy/assets/145742755/4da491c6-4e61-462c-83ac-9af8217fd7b8)
 
 
 ## Result:
-
-Thus the study on Client Server Chat Applications has been performed
+Thus the study on Client Server Chat Applications has been performed.
 
